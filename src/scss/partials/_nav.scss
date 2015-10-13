@@ -9,7 +9,7 @@ $opening-angle:$pi*2;
 
 
 %goo{
-  filter:url(../../'#shadowed-goo');
+  filter:url('#shadowed-goo');
   // debug
   // background:rgba(255,0,0,0.2);
 }
@@ -19,7 +19,7 @@ $opening-angle:$pi*2;
   width:56px;
   height:56px;
   position:absolute;
-  color:white;
+  color:white; 
   text-align:center;
   line-height:56px;
   transform:translate3d(0,0,0);
@@ -140,28 +140,4 @@ $hamburger-spacing:8px;
       text-align: left;
     }
 
-}
-
-.labels .container {
-    position: relative;
-}
-
-.nav-label {
-    position: absolute;
-    font-size: 1rem;
-    color: #222222;
-    transition:transform ease-out 200ms;
-    right: -14px;
-    border-radius:4px;
-    width: 100px;
-    text-align:center;
-    line-height:1;
-    white-space: nowrap;
-    transform:translate3d(0,0,0);
-    top:-24px;
-    @for $i from 1 through 3{
-        &:nth-child(#{$i}){
-          transform:translate3d(-94px*$i,0,0);
-        }
-    }
 }
