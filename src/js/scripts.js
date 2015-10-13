@@ -11,6 +11,12 @@
 			var s = skrollr.init({ forceHeight: false });
 			skrollr.menu.init(s, {});
 
+			
+			$('#galleryBanner').popup({
+				openelement: '.galleryBanner_open',
+				opacity: 0.5,
+				transition: 'all 0.3s'
+			});
 
 			$('#gallery1').popup({
 				openelement: '.gallery1_open',

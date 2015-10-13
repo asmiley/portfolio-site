@@ -406,8 +406,8 @@ td, th {
     padding-left: 0; } }
 
 .menu {
-  -webkit-filter: url(../../'#shadowed-goo');
-          filter: url(../../'#shadowed-goo'); }
+  -webkit-filter: url('#shadowed-goo');
+          filter: url('#shadowed-goo'); }
 
 .menu-item, .menu-open-button {
   background: #CDDC39;
@@ -532,36 +532,8 @@ td, th {
   .logo {
     text-align: left; } }
 
-.labels .container {
-  position: relative; }
-
-.nav-label {
-  position: absolute;
-  font-size: 1rem;
-  color: #222222;
-  transition: -webkit-transform ease-out 200ms;
-  transition: transform ease-out 200ms;
-  right: -14px;
-  border-radius: 4px;
-  width: 100px;
-  text-align: center;
-  line-height: 1;
-  white-space: nowrap;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  top: -24px; }
-  .nav-label:nth-child(1) {
-    -webkit-transform: translate3d(-94px, 0, 0);
-            transform: translate3d(-94px, 0, 0); }
-  .nav-label:nth-child(2) {
-    -webkit-transform: translate3d(-188px, 0, 0);
-            transform: translate3d(-188px, 0, 0); }
-  .nav-label:nth-child(3) {
-    -webkit-transform: translate3d(-282px, 0, 0);
-            transform: translate3d(-282px, 0, 0); }
-
 body {
-  background-color: #0097A7; }
+  background-color: #009ad5; }
 
 .content {
   width: 100%;
@@ -624,6 +596,7 @@ div.about {
   width: 75%; }
 
 .stats {
+  background-color: white;
   padding: 0rem 2rem 0 2rem;
   max-width: 22rem;
   margin: auto auto; }
@@ -662,29 +635,36 @@ div.about {
   color: #C0CA33; }
 
 .listening {
-  display: block;
   margin: 0 -2rem;
   height: 100%;
   border-top: 1px solid #B6B6B6;
   background-color: #EEEEEE;
   padding: 1rem 0.5rem 1rem 0.5rem; }
   .listening div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto; }
   .listening ul {
-    width: 67%;
-    padding: 0 0 0 1rem;
-    display: inline-block; }
+    padding: 0 0 0 1rem; }
   .listening li {
     list-style: none;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
   .listening i {
-    display: inline-block;
     color: #A4A4A4;
     text-align: center;
-    font-size: 3rem;
-    padding: 1rem 0 0 1.5rem; }
+    font-size: 3rem; }
 
 @media screen and (min-width: 30rem) {
   .stats {
@@ -716,7 +696,7 @@ div.about {
   list-style: none;
   padding: 0; }
 
-.gallery-button {
+.gallery-button, .gallery-banner {
   cursor: pointer;
   overflow: hidden;
   width: 100%;
@@ -725,12 +705,12 @@ div.about {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 1rem;
   transition: box-shadow 0.2s ease-in-out; }
-  .gallery-button a {
+  .gallery-button a, .gallery-banner a {
     text-decoration: none;
     color: #212121; }
-  .gallery-button img {
+  .gallery-button img, .gallery-banner img {
     width: 100%; }
-  .gallery-button span {
+  .gallery-button span, .gallery-banner span {
     font-family: 'Roboto Condensed', Helvetica, Arial;
     display: block;
     position: relative;
@@ -738,7 +718,10 @@ div.about {
     font-size: 1.1rem;
     color: #727272; }
 
-.gallery-button:hover {
+.gallery-banner span {
+  text-align: center; }
+
+.gallery-button:hover, .gallery-banner:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 4px 6px rgba(0, 0, 0, 0.24); }
 
 @media screen and (min-width: 35rem) {
@@ -746,27 +729,27 @@ div.about {
     width: 49%;
     float: left;
     margin-right: 2%; }
-  .gallery-button:nth-child(2n+2) {
+  .gallery-button:nth-child(2n+3) {
     margin-right: 0; }
-  .gallery-button:nth-child(2n+1) {
+  .gallery-button:nth-child(2n) {
     clear: left; } }
 
 @media screen and (min-width: 63.73rem) {
   .gallery-button {
     width: 32%; }
-  .gallery-button:nth-child(2n+2) {
+  .gallery-button:nth-child(2n+3) {
     margin-right: 2%; }
-  .gallery-button:nth-child(2n+1) {
+  .gallery-button:nth-child(2n) {
     clear: none; }
-  .gallery-button:nth-child(3n+3) {
+  .gallery-button:nth-child(3n+4) {
     margin-right: 0; }
-  .gallery-button:nth-child(3n+1) {
+  .gallery-button:nth-child(3n+2) {
     clear: left; } }
 
 /***************** Gallery ******************/
 .contact {
   padding-top: 3rem;
-  background-color: #00bcd4;
+  background-color: #00adef;
   padding-bottom: 2rem;
   color: white;
   text-align: center;
@@ -843,7 +826,7 @@ div.about {
   background-color: #e1e1e1; }
 
 .footer {
-  background-color: #0097A7;
+  background-color: #009ad5;
   height: 0.5rem; }
 
 svg {

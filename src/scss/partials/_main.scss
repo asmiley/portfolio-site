@@ -1,5 +1,5 @@
 body {
-    background-color: #0097A7;
+    background-color: rgba(0,154,213,1);
 }
 .content{
     width: 100%;
@@ -75,6 +75,7 @@ div.about {
 }
 
 .stats {
+    background-color: white;
     padding: 0rem 2rem 0 2rem;
     max-width: 22rem;
     margin: auto auto;
@@ -125,7 +126,6 @@ div.about {
 }
 
 .listening {
-    display: block;
     margin: 0 -2rem;
     height: 100%;
     border-top: 1px solid #B6B6B6;
@@ -133,12 +133,14 @@ div.about {
     padding: 1rem 0.5rem 1rem 0.5rem;
 
     div{
-        margin: 0 auto;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       margin: 0 auto;
     }
     ul {
-        width: 67%;
         padding: 0 0 0 1rem;
-        display: inline-block;
     }
     li{
         list-style: none;
@@ -147,11 +149,10 @@ div.about {
         text-overflow: ellipsis;
     }
     i {
-        display: inline-block;
+
         color: #A4A4A4;
         text-align: center;
         font-size: 3rem;
-        padding: 1rem 0 0 1.5rem;
     }
 }
 
@@ -197,7 +198,8 @@ div.about {
     list-style: none;
     padding: 0;
 }
-.gallery-button {
+
+.gallery-button, .gallery-banner {
     cursor: pointer;
     overflow: hidden;
     width: 100%;
@@ -224,7 +226,11 @@ div.about {
     }
 }
 
-.gallery-button:hover {
+.gallery-banner span {
+    text-align: center;
+}
+
+.gallery-button:hover, .gallery-banner:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 6px rgba(0,0,0,0.24);
 }
 
@@ -234,29 +240,28 @@ div.about {
         float: left;
         margin-right: 2%;
     }
-    .gallery-button:nth-child(2n+2) {
+    .gallery-button:nth-child(2n+3) {
         margin-right: 0;
     }
-      .gallery-button:nth-child(2n+1) {
+      .gallery-button:nth-child(2n) {
         clear: left;
     }
-
 }
 
 @media screen and (min-width: 63.73rem)  {
     .gallery-button {
         width: 32%;
     }
-        .gallery-button:nth-child(2n+2) {
+        .gallery-button:nth-child(2n+3) {
         margin-right: 2%;
     }
-        .gallery-button:nth-child(2n+1) {
+        .gallery-button:nth-child(2n) {
         clear: none;
     }
-        .gallery-button:nth-child(3n+3) {
+        .gallery-button:nth-child(3n+4) {
         margin-right: 0;
     }
-      .gallery-button:nth-child(3n+1) {
+      .gallery-button:nth-child(3n+2) {
         clear: left;
     }
 
@@ -267,7 +272,7 @@ div.about {
 
 .contact {
     padding-top: 3rem;
-    background-color:  #00bcd4;
+    background-color: rgba(0,173,239,1);
     padding-bottom: 2rem;
     color: white;
     text-align: center;
