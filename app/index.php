@@ -27,17 +27,16 @@
         min-height:64px;
         box-shadow:0px 3px 6px rgba(0, 0, 0, 0.16);">
             <div class="overlay" data-start="
-          background-color:rgba(0,188,212,0.7);" data-60p="
-          background-color:rgba(0,188,212,1);">
+          background-color:rgba(0,173,239,1);" data-60p="
+          background-color:rgba(0,154,213,1);">
                 <div class="container">
                     <!-- ######## Personal logo ########## -->
                     <div class="logo">
                         <a href="#">
-                        <h1 data-start="
-                  font-size:5rem;
-                  color:rgb(255,255,255);" data-68p="
-                  font-size:2rem;
-                  color:rgb(0,151,167);">
+                        <h1 data-start="font-size:5rem; color:rgba(255,255,255,1);" 
+                            data-30p="color:rgba(255,255,255,0);"
+                            data-58p="color:rgba(0,135,187,0);"
+                            data-68p="font-size:2rem; color:rgba(0,135,187,1);">
                 a.Smiley</h1>
                     </a>
                     </div>
@@ -55,26 +54,17 @@
                 </div>
             </div>
             <!-- ######## Gooey Navigation Menu ########## -->
-            <nav class="menu">
-                <div class="labels">
-                    <div class="container">
-                        <div class="nav-label">About me</div>
-                        <div class="nav-label">Recent work</div>
-                        <div class="nav-label">Contact me</div>
-                    </div>
-                </div>
+            <nav class="menu" style="filter:url('#shadowed-goo')");>
                 <div class="container">
-                    <input type="checkbox" class="menu-open" name="menu-open" id="menu-open" />
+                    <input type="checkbox" class="menu-open" name="menu-open" id="menu-open">
                     <label class="menu-open-button" for="menu-open">
                         <span class="hamburger hamburger-1"></span>
                         <span class="hamburger hamburger-2"></span>
                         <span class="hamburger hamburger-3"></span>
                     </label>
                     <a href="#contact" class="menu-item"> <i class="fa fa-envelope"></i></a>
-                    
-                    <a href="#work" class="menu-item"> <i class="fa fa-photo"></i></a>
-                    
-                    <a href="#bio" class="menu-item"> <i class="fa fa-user"></i></a>
+                    <a href="#work" class="menu-item"> <i class="fa fa-photo"></i> </a>
+                    <a href="#bio" class="menu-item"> <i class="fa fa-user"></i> </a>
                 </div>
             </nav>
         </header>
@@ -211,6 +201,10 @@
                         <h2>Recent Work</h2>
                         <!-- ###### Gallery Buttons ####### -->
                         <ul>
+                            <li class="gallery-banner galleryBanner_open">
+                                <img src="assets/img/nearby-thumb.jpg" alt="near.by geolocation search" />
+                                <span>near.by</span>
+                            </li>
                             <li class="gallery-button gallery1_open">
                                 <img src="assets/img/greenit-small.jpg" alt="GreenIT Logo" />
                                 <span>Green IT</span>
@@ -240,6 +234,24 @@
                 </div>
             </section>
             <!-- ######## Gallery Popups ######### -->
+            <div id="galleryBanner" class="project_description">
+                <div class="popup_row">
+                    <img class="popup_image" src="assets/img/green-it_popup.png" alt="Green IT Website" />
+                </div>
+                <div class="popup_text">
+                    <h3>Green IT</h3>
+                    <p>
+                        <span class="tags">Skills:&nbsp;</span>Web development, information architecture, PHP, XSLT, responsive web design, Cascade Server, user documentation.</p>
+                </div>
+                <div class="popup_buttons">
+                    <div class="popup_back galleryBanner_close">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <a href="http://greenit.iu.edu/" class="popup_more-info">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
             <div id="gallery1" class="project_description">
                 <div class="popup_row">
                     <img class="popup_image" src="assets/img/green-it_popup.png" alt="Green IT Website" />
@@ -412,22 +424,25 @@
         <!-- ######## SVG Menu Filters -->
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
-                <filter id="shadowed-goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                    <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-                    <feColorMatrix in="shadow" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-                    <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-                    <feComposite in2="shadow" in="goo" result="goo" />
-                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                </filter>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                    <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                </filter>
+            <filter id="shadowed-goo">               
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feComposite in2="shadow" in="goo" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
             </defs>
         </svg>
+         <script type='text/javascript' id="__bs_script__">//<![CDATA[
+        document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.9.2.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
+        //]]></script>
     </body>
 
 </html>
