@@ -26,10 +26,10 @@ The package.json includes the dependencies for the project as well as informatio
 
 ````js
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
+ * aSmiley Portfolio
+ * Web Developer and Information Architect
+ * https://asmiley.me
+ * @author Alex Smiley
  * @version 1.0.0
  * Copyright 2014. MIT licensed.
  */

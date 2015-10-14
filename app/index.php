@@ -7,12 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="//ajax.googleapis.com" rel="dns-prefetch">
+        <link href="http://www.google-analytics.com" rel="dns-prefetch">
+        <link href="http://ajax.googleapis.com" rel="dns-prefetch">
         <link href="assets/css/style.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700%7CRoboto:400,700,300%7CShare' rel='stylesheet'
         type='text/css'>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
         <script src="assets/components/modernizr/modernizr.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     </head>
@@ -440,9 +442,6 @@
             </filter>
             </defs>
         </svg>
-         <script type='text/javascript' id="__bs_script__">//<![CDATA[
-        document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.9.2.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
-        //]]></script>
     </body>
 
 </html>
