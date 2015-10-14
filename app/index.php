@@ -71,7 +71,7 @@
         <!-- ####### Start Content ####### -->
         <main class="main content" role="main" id="skrollr-body" >
             <!-- ###### About me ####### -->
-            <section class="headline" data-menu-offset="-90" id="bio">
+            <section class="headline" data-menu-offset="-40" id="bio">
                 <div class="container clear" >
                     <div class="bio-blurb">
                         <h2>Building innovative,
@@ -195,7 +195,7 @@
                 </div>
             </section>
             <!-- #### Recent Work ##### -->
-            <section class="work" id="work" data-menu-offset="-90">
+            <section class="work" id="work" data-menu-offset="-10">
                 <div class="container">
                     <div class="gallery clear">
                         <h2>Recent Work</h2>
@@ -236,18 +236,18 @@
             <!-- ######## Gallery Popups ######### -->
             <div id="galleryBanner" class="project_description">
                 <div class="popup_row">
-                    <img class="popup_image" src="assets/img/green-it_popup.png" alt="Green IT Website" />
+                    <img class="popup_image" src="assets/img/nearby-popup.jpg" alt="near.by geolocation search" />
                 </div>
                 <div class="popup_text">
-                    <h3>Green IT</h3>
+                    <h3>near.by</h3>
                     <p>
-                        <span class="tags">Skills:&nbsp;</span>Web development, information architecture, PHP, XSLT, responsive web design, Cascade Server, user documentation.</p>
+                        <span class="tags">Skills:&nbsp;</span>Web development, information architecture, AJAX, JQuery, responsive web design, CSS transforms.</p>
                 </div>
                 <div class="popup_buttons">
                     <div class="popup_back galleryBanner_close">
                         <i class="fa fa-chevron-left"></i>
                     </div>
-                    <a href="http://greenit.iu.edu/" class="popup_more-info">
+                    <a href="http://ella.ils.indiana.edu/~davsmile/javascript/final.html" class="popup_more-info">
                         <i class="fa fa-search"></i>
                     </a>
                 </div>
