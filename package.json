@@ -1,13 +1,13 @@
 {
-  "name": "fastshell",
+  "name": "asmiley",
   "title": "Fiercely quick and opinionated front-ends",
-  "author": "Hossein Karami",
-  "url": "https://HosseinKarami.github.io/fastshell",
-  "version": "1.0.3",
+  "author": "Alex Smiley",
+  "url": "http://asmiley.me",
+  "version": "2.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/HosseinKarami/fastshell.git"
+    "url": "https://github.com/asmiley/portfolio-site"
   },
   "devDependencies": {
     "browser-sync": "^1.6.5",
